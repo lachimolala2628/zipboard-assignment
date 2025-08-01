@@ -28,15 +28,15 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition duration-300 px-4 sm:px-6 md:px-8">
+    <div className="min-h-screen bg-white dark:bg-black transition duration-300 px-4 sm:px-6 md:px-8">
       <div className="max-w-3xl mx-auto py-16 sm:py-20">
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
-        <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold text-center py-5 text-purple-600 dark:text-purple-400">
+        <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold text-center py-5 mb-10 text-[#8800C8] dark:text-[#2FC1FF]">
           Frequently asked questions
         </h1>
 
-        <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="divide-y divide-[#CDCDCD] dark:divide-[#CDCDCD] border-y border-[#CDCDCD] dark:border-[#CDCDCD]">
           {faqs.map((faq, index) => (
             <AccordionItem
               key={index}
